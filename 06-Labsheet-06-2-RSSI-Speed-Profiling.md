@@ -59,11 +59,12 @@ sequenceDiagram
 
 | การทดลองที่ | ค่า Tx Power ที่ตั้ง (dBm) | ค่า RSSI ที่อ่านได้จริง (dBm) | เวลาที่ใช้ (Seconds) | ความเร็วที่วัดได้ Throughput (Kbps) |
 | :---: | :---: | :---: | :---: | :---: |
-| **1** | 20 dBm (Max) | | | |
-| **2** | 15 dBm | | | |
-| **3** | 10 dBm | | | |
-| **4** | 5 dBm | | | |
-| **5** | 2 dBm (Min) | | | |
+| **1** | 20 dBm (Max) | -54.9 dBm|0.278 วิ |1,759.09 Kbps |
+| **2** | 15 dBm |  -55.4 dBm|  0.165 วิ |2,554.14 Kbps |
+| **3** | 10 dBm |-55.7 dBm |0.153 วิ   |2,818.20 Kbps |
+| **4** | 5 dBm |-53.9 dBm |0.194 วิ | 2,331.05 Kbps 
+ |
+| **5** | 2 dBm (Min) |-52.5 dBm |0.156 วิ | 3,024.24 Kbps|
 
 ---
 
@@ -75,6 +76,8 @@ sequenceDiagram
 2. สร้างเส้นแนวโน้ม **Trendline / Regression Curve** (เช่น Logarithmic Regression: $y = a \cdot \ln(x) + b$)
 3. คำนวณค่า **$R^2$ (Coefficient of Determination)** เพื่อประเมินความแม่นยำของสมการ
 4. ระบุจุด **Threshold RSSI (dBm)** ที่ความเร็วเริ่มลดลงมากกว่า 50% จากระดับสูงสุด
+
+<img width="598" height="352" alt="image" src="https://github.com/user-attachments/assets/f15b3140-b4a2-426b-9b8b-5629803b0084" />
 
 ---
 
