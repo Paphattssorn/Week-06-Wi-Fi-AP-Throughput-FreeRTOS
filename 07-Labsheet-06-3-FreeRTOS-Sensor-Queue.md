@@ -166,8 +166,8 @@ void app_main(void) {
 
 | ชื่อ FreeRTOS Task | ขนาด Stack ที่กำหนดใน `xTaskCreate` (Bytes) | ค่า High Water Mark ที่อ่านได้ (Words / Bytes) | สถานะความปลอดภัยสแตก |
 | :--- | :---: | :---: | :---: |
-| **`SensorCollectorTask`** | 3072 | | |
-| **`NetworkCommTask`** | 4096 | | |
+| **`SensorCollectorTask`** | 3072 |1196 words (1196 bytes) | ปลอดภัย เหลือพื้นที่เพียงพอ ไม่เกิด Stack Overflow|
+| **`NetworkCommTask`** | 4096 |2248 words (2248 bytes) |  ปลอดภัย เหลือพื้นที่เพียงพอ ไม่เกิด Stack Overflow|
 
 ---
 
